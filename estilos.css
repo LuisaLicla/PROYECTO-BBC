@@ -1,0 +1,281 @@
+header {
+    background: black;
+    height    : 40px;
+    position  : fixed;
+    width     : 100%;
+    z-index   : 99;
+}
+
+header .container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header form button {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    border-left: 1px solid #777;
+    padding    : 11px 0;
+}
+
+header nav ul li:last-child {
+    border-right: 1px solid #777;
+}
+
+header nav ul li a {
+    color      : white;
+    font-weight: bold;
+    padding    : 11px;
+    position   : relative;
+}
+
+header nav ul li a::after {
+    content : '';
+    height  : 4px;
+    width   : 100%;
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+}
+
+.color-home::before,
+.color-home::after {
+    background: deepskyblue;
+}
+
+.color-news::before,
+.color-news::after {
+    background: orangered;
+}
+
+.color-culture::before,
+.color-culture::after {
+    background: mediumpurple;
+}
+
+.color-future::before,
+.color-future::after {
+    background: limegreen;
+}
+
+.color-travel::before,
+.color-travel::after {
+    background: deeppink;
+}
+
+.welcome {
+    padding-top: 40px;
+}
+
+.welcome .cabecera {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.welcome .cabecera span {
+    font-size: 1.5em;
+    color    : #999999;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+article {
+    position: relative;
+}
+
+article .articulo-texto {
+    color     : white;  
+    position  : absolute;
+    bottom    : 5px;
+    left      : 10px;
+    padding   : 0px;
+    display: block;
+    background: rgba(76,76,76,1);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.54)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+article .articulo-texto a {
+    padding-left: 20px;
+    color       : white;
+    position    : relative;
+}
+
+article .articulo-texto a::before {
+    content : '';
+    width   : 10px;
+    height  : 15px;
+    position: absolute;
+    left    : 0;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.reel {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(img/reel/background-reel.jpg);
+    position  : relative;
+}
+.reel .reel-boton{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.reel .reel-boton a{
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 25%;
+}
+.reel::before {
+    content   : '';
+    width     : 100%;
+    height    : 100%;
+    background: -moz-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(51,51,51,0.77) 17%, rgba(51,51,51,0.48) 39%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(20,20,20,1)), color-stop(17%, rgba(51,51,51,0.77)), color-stop(39%, rgba(51,51,51,0.48)));
+    background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(51,51,51,0.77) 17%, rgba(51,51,51,0.48) 39%);
+    background: -o-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(51,51,51,0.77) 17%, rgba(51,51,51,0.48) 39%);
+    background: -ms-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(51,51,51,0.77) 17%, rgba(51,51,51,0.48) 39%);
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(51,51,51,0.77) 17%, rgba(51,51,51,0.48) 39%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#333333', GradientType=0 );
+
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+}
+.reel .container {
+    position: relative;
+    z-index : 9;
+}
+.reel article{
+    background: white;
+}
+.reel h3{
+    padding: 12px;
+    color: black;
+}
+
+
+.cabecera .reel-texto p ,
+.cabecera .reel-texto strong,
+.cabecera  a{
+    color: white;
+}
+
+/* Tercera sección */
+ .container .encabezado{
+    color: white;
+    font-size: 17px;
+    background-color: deepskyblue;
+     padding: 10px;
+}
+.bbc .comentarios  li:nth-child(odd){
+    background-color: black;
+}
+.bbc .comentarios  li:nth-child(even){
+    background-color: dimgray;
+}
+.bbc .comentarios  li a{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.bbc .comentarios li img{
+    border-radius: 50%;
+    width: 45px;
+}
+.bbc .comentarios span{
+  padding-left: 20px;
+    color: white;
+}
+article .texto a {
+    padding-left: 20px;
+    position    : relative;
+}
+article .texto a::before {
+    content : '';
+    width   : 10px;
+    height  : 15px;
+    position: absolute;
+    left    : 0;
+}
+.section-home h2 {
+    padding-left: 20px;
+    position    : relative;
+}
+.section-home h2::before {
+    content : '';
+    width   : 10px;
+    height  : 27px;
+    position: absolute;
+    left    : 0;
+}
+.contact {
+    background: url(./img/contact/background-contact-us.jpg);
+    position  : relative;
+}
+
+/* Fondo semitransparente - forma 1 */
+.contact::before {
+    content   : '';
+    width     : 100%;
+    height    : 100%;
+    background: rgba(0, 0, 4, .8);
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index : 9;
+}
+
+/* Fondo semitransparente - forma 2 */
+.contact .formulario {
+    padding   : 100px;
+    background: rgba(0, 191, 255, .5);
+}
+
+.contact .formulario form {
+    position: relative;
+    z-index : 12;
+}
+
+.text-color-blanco {
+    color: white;
+}
+footer{
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+
+    background-color: #777;
+    color: beige;
+    font-size: 12px;
+}
+.footer{
+    align-content: center;
+}
